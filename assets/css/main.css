@@ -1,0 +1,476 @@
+/* Variáveis */
+:root {
+    --red: #e53114;
+    --black: #0e1211;
+    --grey: #999999;
+    --white: #fff;
+    --greyTwo: #eee;
+}
+
+/* Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--black);
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+/* Header */
+.logo {
+    font-size: 26px;
+    color: var(--red);
+    font-weight: bolder;
+}
+
+.logo span {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+header {
+    position: absolute;
+}
+
+header .container {
+    background-color: var(--greyTwo);
+    width: 100%;
+    position: fixed;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+header nav a {
+    font-size: 18px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+header nav a:hover {
+    color: var(--grey);
+}
+
+/* Home */
+#button-close {
+    margin-top: 10px;
+    margin-left: 95%;
+    position: absolute;
+    z-index: 9989;
+    cursor: pointer;
+}
+
+#button-close p:hover {
+    color: var(--greyTwo);
+}
+
+#button-close p {
+    color: var(--grey);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.popup {
+    position: absolute;
+    background-color: var(--white);
+    width: 640px;
+    height: 420px;
+    border-radius: 10px;
+    margin-top: 200px;
+    margin-left: 50%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .20);
+    z-index: 998;
+}
+
+#button-close-info {
+    margin-top: 5px;
+    margin-left: 97%;
+    position: absolute;
+    z-index: 9989;
+    cursor: pointer;
+}
+
+#button-close-info p:hover {
+    color: var(--greyTwo);
+}
+
+#button-close-info p {
+    color: var(--grey);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-box-info {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .50);
+    margin-top: 30%;
+    margin-left: 60px;
+    border-radius: 3px;
+    width: 60%;
+    height: 26%;
+}
+
+.text-box-info h3 {
+    margin-left: 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.text-box-info p {
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+.principal-wines {
+    font-size: 19px;
+    background-image: linear-gradient(rgba(0, 0, 0, 100), rgba(0, 0, 0, 0)100%), url(../img/wine-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal-wines .description {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 28px;
+}
+
+.principal-wines .title-wines {
+    font-size: 40px;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    transition: .5s ease all;
+}
+
+.button a {
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--white);
+}
+
+.button:hover>a {
+    color: var(--black);
+
+}
+
+.button i {
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.principal-wines .container {
+    margin-left: 60px;
+    width: 40%;
+}
+
+.box-highlights {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.specifications {
+    width: 60%;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 36px;
+    letter-spacing: 2px;
+}
+
+/* Carousel */
+
+.box-wine {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carousel-wines {
+    margin-top: 10px;
+}
+
+.item {
+    background-color: var(--white);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.item:hover {
+    border: solid 3px var(--red);
+    transform: scale(0.95);
+    transition: all 0.5s;
+}
+
+.highlights {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+/* Wines - Vinhos */
+.wines {
+    background-color: var(--white);
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wines .container {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wines .container #wine-content {
+    width: 100%;
+    height: 700px;
+}
+
+/* Winery - Vinícolas */
+.winery {
+
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.winery .title-pages {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winery .title-pages h3 {
+    margin-top: 90px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.winery .container {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-text-winery {
+    width: 62%;
+}
+
+.all-text-wine {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.all-text-wine span {
+    font-weight: 600;
+}
+
+.box-imgs-winery {
+    width: 35%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-winery {
+    width: 368px;
+    border-radius: 3px;
+    border: 3px solid var(--white);
+}
+
+#img-winery1 {
+    margin-top: 10px;
+}
+
+#img-winery2 {
+    margin-top: 90px;
+}
+
+/* Requests - Pedidos */
+.request {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.request .title-pages {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.request .title-pages h3 {
+    margin-top: 90px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.request .container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-description {
+    width: 44%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    width: 35%;
+    height: 580px;
+}
+
+#title-contact h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.text-descrition {
+    margin-top: 24px;
+}
+
+.text-form-descrition {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+#img-description {
+    margin-top: 60px;
+    border-radius: 3px;
+}
+
+#img-description img {
+    border-radius: 3px;
+}
+
+input,
+#pay,
+#wine-select {
+    width: 100%;
+    height: 45px;
+    padding-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    font-size: 16px;
+    padding-left: 5px;
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--grey);
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+#send-msn {
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    margin-top: 24px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container {
+    width: 60%;
+}
+
+#text-footer {
+    text-align: center;
+}

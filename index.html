@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="./vendor/owl/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl/css/owl.theme.default.min.css">
+
+    <title>Carta Digital de Vinhos</title>
+</head>
+
+<body onscroll="closeRoll(); formClean();" onload="openPage('a', 'wine-content')">
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CIA WINES</h1>
+                <p><span>Sua Carta Digital de Vinhos</span></p>
+                <!--<img src="./assets/img/logo_netflix.png" alt="NETFLIX">-->
+            </div>
+            <nav>
+                <a href="#start">Início</a>
+                <a href="#wines">Vinhos</a>
+                <a href="#winery">Vinícolas</a>
+                <a href="#request">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="popup" id="closeone" style="display: none;">
+            <div id="button-close" onclick="closePopUp(this);">
+                <p>X</p>
+            </div>
+            <video width="640" height="420" controls>
+                <source src="#" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="text-box-info" id="closetwo" style="display: none;">
+            <div id="button-close-info" onclick="closeTextInfo(this);">
+                <p>X</p>
+            </div>
+            <h3>Carta de Vinhos</h3>
+            <p>
+                Nós sempre consideramos o vinho participante indispensável da boa mesa.
+                Por isto desenvolvemos, ao longo dos anos, trabalho pioneiro buscando colocá-lo na posição merecida.
+                Temos a melhor Carta Digital de Vinhos, várias vezes destacada por apresentações nacionais e
+                internacionais de prestígio, como Wine Spectator e The World of Fine Wine. Em nossa Carta de Vinhos
+                você encontra os grandes destaques do mundo, que são considerados as jóias das uvas.
+                Possuímos expertise em degustação, e através de comparações e degustações intensivas,
+                no Brasil e no exterior, selecionamos os melhores vinhos pelos melhores preços em diversas regiões de
+                origem.
+            </p>
+        </div>
+
+        <div class="principal-wines" id="start">
+            <div class="container">
+                <h1 class="title-wines">Conheça nossa "Carta Digital de Vinhos"</h1>
+                <p class="description">Criada especialmente para você que aprecia um bom e saboroso vinho de qualidade,
+                    sendo ele
+                    nacional ou importado.</p>
+                <div class="buttons">
+                    <button role="button" class="button" onclick="clickOpenPopUp(this), closeTextInfo(this);"><a
+                            href="#">
+                            <i class="fas fa-play"></i>
+                            ASSITIR AGORA
+                        </a>
+                    </button>
+                    <button role="button" class="button" onclick="clickOpenText(this), closePopUp(this);"><a href="#">
+                            <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÕES
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="box-highlights" id="wines">
+        <p class="specifications">
+            Ao longo dos anos, foram selecionados grandes vinhos de produtores
+            altamente conceituados, os clássicos mundiais!
+            Vinhos que representam o que há de melhor nas suas regiões e faixas de preço,
+            com intensos caracteres da região de origem e das uvas que foram feitos.
+        </p>
+
+        <p class="highlights">Nossa Seleção de Grandes Vinhos:</p>
+    </div>
+    <div class="carousel-wines">
+        <div class="owl-carousel owl-theme">
+            <div class="item" onclick="openPage('a', 'wine-content')">
+                <img class="box-wine" style="width: 70%;" src="./assets/img/vinho-rosso-di-montalcino-mini-1.jpg"
+                    alt="">
+            </div>
+            <div class="item" onclick="openPage('b', 'wine-content')">
+                <img class="box-wine" style="width: 70%;"
+                    src="./assets/img/vinho-pouilly-fuisse-terroir-de-fuisse-mini-2.jpg" alt="">
+            </div>
+            <div class="item" onclick="openPage('c', 'wine-content')">
+                <img class="box-wine" style="width: 70%;" src="./assets/img/vinho-p5-years-bual-madeira-mini-3.jpg"
+                    alt="">
+            </div>
+            <div class="item" onclick="openPage('d', 'wine-content')">
+                <img class="box-wine" style="width: 70%;" src="./assets/img/vinho-porto-fine-ruby-mini-4.jpg" alt="">
+            </div>
+            <div class="item" onclick="openPage('e', 'wine-content')">
+                <img class="box-wine" style="width: 70%;" src="./assets/img/vinho-erasmo-2007-mini-5.jpg" alt="">
+            </div>
+            <div class="item" onclick="openPage('f', 'wine-content')">
+                <img class="box-wine" style="width: 70%;" src="./assets/img/vinho-obeidi-branco-2016-mini-6.jpg" alt="">
+            </div>
+            <div class="item" onclick="openPage('g', 'wine-content')">
+                <img class="box-wine" style="width: 70%;"
+                    src="./assets/img/vinho-brunello-di-montalcino-2014-mini-7.jpg" alt="">
+            </div>
+            <div class="item" onclick="openPage('h', 'wine-content')">
+                <img class="box-wine" style="width: 70%;"
+                    src="./assets/img/vinho-beaumes-de-venise-aoc-tinto-2018-mini-8.jpg" alt="">
+            </div>
+            <div class="item" onclick="openPage('i', 'wine-content')">
+                <img class="box-wine" style="width: 70%;" src="./assets/img/vinho-5-years-sercial-madeira-mini-9.jpg"
+                    alt="">
+            </div>
+            <div class="item" onclick="openPage('j', 'wine-content')">
+                <img class="box-wine" style="width: 70%;"
+                    src="./assets/img/vinho-erasmo-garnacha-alicante-2016-mini-10.jpg" alt="">.
+            </div>
+        </div>
+    </div>
+    <div class="wines">
+        <div class="container">
+            <!--Vinhos em destaque-->
+            <div id="wine-content">bla</div>
+        </div>
+    </div>
+
+    <div class="winery" id="winery">
+        <div class="title-pages">
+            <h3>Saiba mais sobre "Vinícolas"</h3>
+        </div>
+        <div class="container">
+            <div class="box-imgs-winery">
+                <img src="./assets/img/campo-vinicola.jpeg" alt="" class="img-winery" id="img-winery1">
+                <img src="./assets/img/vinicola.jpeg" alt="" class="img-winery" id="img-winery2">
+            </div>
+            <div class="box-text-winery">
+                <p class="all-text-wine">As primeiras vinícolas surgiram há milhares de anos, registros arqueológicos
+                    indicam a utilização
+                    de jarros de grande volume para produção de vinho há cerca de 8 mil anos.
+                    A produção em maior volume é de fato o que indica o nascimento do conceito de vinícola,
+                    deixando de ser apenas uma produção “caseira” e passando a uma elaboração planejada.<br>
+                    <br><span>Diferença entre vinícola e vinhedo</span><br><br>
+                    Vinhedo é a denominação dada à plantação de videiras em quanto a vinícola está associada de fato à
+                    elaboração do vinho.
+                    Uma vinícola pode conter um vinhedo, diversos vinhedos ou até mesmo nenhum.<br><br>
+                    <span>Qual a função de uma vinícola?</span><br><br>
+                    A função primordial de uma vinícola é produzir vinhos. Podendo se restringir à adega onde o enólogo
+                    de fato elabora o vinho, até linhas de produção completas que englobam desde o cultivo das uvas até
+                    engarrafamento e rotulagem para venda.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="request" id="request">
+        <div class="title-pages">
+            <h3>Escolha agora o seu vinho!</h3>
+        </div>
+        <div class="container">
+            <div class="form-description">
+                <div id="title-contact">
+                    <h3>Solicite sua carta de vinhos</h3>
+                </div>
+                <div class="text-descrition">
+                    <p class="text-form-descrition">
+                        Através da carta de vinhos, é possível coletar informações como a safra,
+                        o nome do vinho, o produtor, a uva, a região e o país.
+                        Se oriente pelas experiências que já possui ou pelas curiosidades que tem.</p>
+                </div>
+                <div id="img-description">
+                    <img src="./assets/img/image-contact.jpeg" alt="">
+                </div>
+
+                <!--Mensagens formulario-->
+                <div id="send-msn">texto</div>
+
+            </div>
+            <div class="form">
+                <form class="order-form" action="">
+                    <label for="nome">Nome:</label>
+                    <input type="text" placeholder="Nome Completo" name="nome" required>
+                    <label for="whatsapp">WhatsApp:</label>
+                    <input type="text" placeholder="Telefone de contato" name="tel" maxlength="11"
+                        onkeypress="return onlynumber();" required>
+                    <label for="whatsapp">Email:</label>
+                    <input type="email" placeholder="seuemail@seuemail.com.br" name="email" required>
+                    <label for="escolha">Escolha:</label>
+                    <select name="" id="wine-select" name="selected">
+                        <option value="default">Escolha a origem do vinho</option>
+                        <option value="wine01">Vinhos da Itália</option>
+                        <option value="wine02">Vinhos da Fraça</option>
+                        <option value="wine03">Vinhos de Portugal</option>
+                        <option value="wine04">Vinhos do Porto</option>
+                        <option value="wine05">Vinhos da Espanha</option>
+                        <option value="wine07">Vinhos de Marrocos</option>
+                        <option value="wine07">Vinhos de Alemanha</option>
+                        <option value="wine07">Vinhos de Australia</option>
+                        <option value="wine08">Vinhos do Brasil</option>
+                        <option value="wine06">Vinhos do Chile</option>
+                        <option value="wine09">Vinhos da Argentina</option>
+                        <option value="wine10">Vinhos da África</option>
+                    </select>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button type="submit" value="Enviar" onclick="validacaoForm(form);">Enviar Pedido</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p id="text-footer">Copyright - Todos os direitos reservados a Cia Wines.</p>
+        </div>
+    </footer>
+
+    <!--<script src="https://kit.fontawesome.com/f46addc9e5.js" crossorigin="anonymous"></script>-->
+    <script src="./vendor/owl/js/jquery.min.js"></script>
+    <script src="./vendor/owl/js/owl.carousel.min.js"></script>
+    <script src="./vendor/owl/js/setup.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/carousel-info-wines.js"></script>
+</body>
+
+</html>

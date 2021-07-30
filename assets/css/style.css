@@ -1,0 +1,56 @@
+/* Variáveis */
+:root {
+    --red: #e53114;
+    --black: #0e1211;
+    --grey: #999999;
+    --white: #fff;
+    --greyTwo: #eee;
+}
+
+/* Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.title-wines-page{
+    width: 60%;
+    height: 30px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-wines-page h3{
+    font-size: 28px;   
+    color: var(--black);
+    text-align: center;
+}
+
+.container-wines{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wines{
+    margin-top: 150px;
+    display: flex;
+}
+
+.content-wines h2{
+    margin-left: 24px;
+    color: var(--black);
+}
+
+.content-wines p{
+    margin-top: 24px;
+    margin-left: 24px;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--black);
+}
